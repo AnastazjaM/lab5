@@ -1,0 +1,2 @@
+FROM apache2
+RUN apt-get update -y 
