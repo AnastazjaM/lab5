@@ -1,3 +1,4 @@
-FROM apache2
-RUN apt-get update -y
+FROM ubuntu:latest
+RUN apt-get install apache2 -y
 EXPOSE 8080
+CMD ["apache2ctl","-D","FOREGROUND"]
