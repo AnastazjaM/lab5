@@ -1,2 +1,3 @@
 FROM apache2
-RUN apt-get update -y 
+RUN apt-get install 
+RUN apt-get update
