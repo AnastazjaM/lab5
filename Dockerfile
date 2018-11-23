@@ -1,4 +1,5 @@
-FROM ubuntu:latest
-RUN apt-get install apache2 -y
+FROM ubuntu
+RUN apt-get update -y
+RUN apt-get install apache2ctl -y
 EXPOSE 80
-CMD ["bash", "-c", "/etc/init.d/apache2 start; bash"]
+CMD ["apach2ctl","-D","FOREGROUND"]
